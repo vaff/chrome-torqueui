@@ -5,5 +5,5 @@ A Chrome extension to overlay the TorqueUI grid, based on the [chrome-bootstrap]
 
 
 Contributers:
-* Dan Kjær Jessen [vaff](https://github.com/vaff/)
-* Carl Henderson [chuckhendo](https://github.com/chuckhendo/)
+* [vaff](https://github.com/vaff/)
+* [chuckhendo](https://github.com/chuckhendo/)
