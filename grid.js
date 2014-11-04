@@ -1,26 +1,57 @@
-if (document.getElementsByClassName('cb-grid-lines').length){
-    
-    document.body.removeChild(document.getElementsByClassName('cb-grid-lines')[0]);
+var lines = document.getElementsByClassName('ct-grid-lines');
+if (lines.length){
+    document.body.removeChild(lines[0]);
 }
-
 else {
-    document.body.innerHTML += '<div class="cb-grid-lines"> \
-      <div class="container"> \
-        <div class="row"> \
-            <div class="span1 col-xs-1"></div> \
-            <div class="span1 col-xs-1"></div> \
-            <div class="span1 col-xs-1"></div> \
-            <div class="span1 col-xs-1"></div> \
-            <div class="span1 col-xs-1"></div> \
-            <div class="span1 col-xs-1"></div> \
-            <div class="span1 col-xs-1"></div> \
-            <div class="span1 col-xs-1"></div> \
-            <div class="span1 col-xs-1"></div> \
-            <div class="span1 col-xs-1"></div> \
-            <div class="span1 col-xs-1"></div> \
-            <div class="span1 col-xs-1"></div> \
-        </div> \
-      </div> \
-    </div>';
-    
+    document.body.innerHTML += [
+    '<div class="ct-grid-lines">',
+        '<div class="container with-xlarge">',
+            '<div class="row is-visible-s">',
+                '<div class="col-s-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-s-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-s-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-s-1"><div class="ct-grid-col-color"></div></div>',
+            '</div>',
+            '<div class="row is-visible-m is-visible-l">',
+                '<div class="col-m-1 col-l-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-m-1 col-l-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-m-1 col-l-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-m-1 col-l-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-m-1 col-l-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-m-1 col-l-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-m-1 col-l-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-m-1 col-l-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-m-1 col-l-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-m-1 col-l-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-m-1 col-l-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-m-1 col-l-1"><div class="ct-grid-col-color"></div></div>',
+            '</div>',
+            '<div class="row is-visible-xl">',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+                '<div class="col-xl-1"><div class="ct-grid-col-color"></div></div>',
+            '</div>',
+        '</div>',
+    '</div>'].join("\n");
 }
